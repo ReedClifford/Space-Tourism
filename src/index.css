@@ -2,3 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Bellefair&family=Poppins:ital,wght@0,400;0,600;0,700;1,100&display=swap");
+
+.root-container {
+  @apply min-h-screen flex bg-black justify-center text-9xl font-bellefair items-center;
+}
+
+/* NAVBAR */
+.navbar {
+  @apply flex justify-between z-40 items-center fixed top-0 w-full px-8 py-4;
+}
+
+/* HOME */
+.home-container {
+  @apply min-h-screen w-full flex bg-gradient-to-l from-neutral-700 to-slate-700 
+    flex-col justify-center text-center items-center;
+}
+.mobile-bg {
+  @apply absolute inset-0 h-full w-full object-cover mix-blend-overlay object-center z-0 block md:hidden;
+}
+.header-container {
+  @apply flex flex-col items-center justify-center gap-5 mt-7 z-20;
+}
+.exploreButton {
+  @apply w-40 h-40 mt-16 rounded-full bg-white text-xl  text-black;
+}
+
+/* BURGERMENU */
+.sideBar {
+  @apply absolute top-0 right-0 w-4/6 min-h-screen backdrop-blur-lg bg-white/10 flex flex-col;
+}
+
+.sideBarLinkContainer {
+  @apply flex flex-col justify-center items-start gap-5 ml-10 mt-20;
+}
+.sideBarLinks {
+  @apply text-xl flex gap-4  text-neutral-100 font-light font-barlow;
+}
