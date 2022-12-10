@@ -13,7 +13,7 @@ const Destination = () => {
       <img
         src={mobileBg}
         alt="mobileBg"
-        className="absolute inset-0 h-fit w-full select-none  mix-blend-overlay  object-center z-0 block md:hidden"
+        className="absolute inset-0 h-fit w-full select-none  mix-blend-overlay object-cover  object-center z-0 block md:hidden"
       />
       <h2 className="flex gap-5 mt-28 font-barlow z-30">
         <span className="text-neutral-400 font-extrabold ">01</span>PICK YOUR
@@ -23,28 +23,28 @@ const Destination = () => {
       <div className="flex gap-5 z-40">
         <NavLink
           to="/destination/"
-          className="font-barlow text-xl border-b-4 border-b-transparent duration-500 ease-in-out hover:border-white"
+          className="destinationLink"
           onClick={() => setCurrentDestination(destination1)}
         >
           Moon
         </NavLink>
         <NavLink
           to="/destination/mars"
-          className="font-barlow text-xl border-b-4 border-b-transparent duration-500 ease-in-out hover:border-white"
+          className="destinationLink"
           onClick={() => setCurrentDestination(destination2)}
         >
           Mars
         </NavLink>
         <NavLink
           to="/destination/Europa"
-          className="font-barlow text-xl border-b-4 border-b-transparent duration-500 ease-in-out hover:border-white"
+          className="destinationLink"
           onClick={() => setCurrentDestination(destination3)}
         >
           Europa
         </NavLink>
         <NavLink
           to="/destination/Titan"
-          className="font-barlow text-xl border-b-4 border-b-transparent duration-500 ease-in-out hover:border-white"
+          className="destinationLink"
           onClick={() => setCurrentDestination(destination4)}
         >
           Titan

@@ -1,6 +1,6 @@
 const Mars = () => {
   return (
-    <div className=" mt-5">
+    <div className=" mt-5 z-40">
       <div className=" flex flex-col  justify-center border-b border-neutral-400 items-center ">
         <h2 className="font-bellefair text-7xl">Mars</h2>
         <p className="max-w-md px-12 mb-8 text-sm ">

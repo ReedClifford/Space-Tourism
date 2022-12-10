@@ -15,6 +15,7 @@ const Home = () => {
           back, and relax because we’ll give you a truly out of this world
           experience!
         </p>
+
         <button className="exploreButton">EXPLORE</button>
       </div>
     </section>

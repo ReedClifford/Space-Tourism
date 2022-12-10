@@ -10,7 +10,7 @@ const Moon = () => {
           landing sites.
         </p>
       </div>
-      <div className="flex flex-col gap-10 p-10 ">
+      <div className="flex flex-col  gap-10 p-10 ">
         <div className="flex flex-col gap-1">
           <h4 className="text-neutral-300 text-sm">AVG. DISTANCE</h4>
           <h3 className="font-bellefair text-3xl">384,400 km</h3>

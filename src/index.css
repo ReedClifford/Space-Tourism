@@ -24,12 +24,12 @@
   @apply flex flex-col items-center justify-center gap-5 mt-7 z-20;
 }
 .exploreButton {
-  @apply w-40 h-40 mt-16 rounded-full font-bellefair text-center bg-white text-xl  text-black;
+  @apply w-40 h-40 mt-16 rounded-full  font-bellefair text-center bg-white text-xl  text-black;
 }
 
 /* BURGERMENU */
 .sideBar {
-  @apply absolute top-0 right-0 w-4/6 min-h-screen backdrop-blur-lg bg-white/10 flex flex-col;
+  @apply fixed top-0 right-0 w-4/6 min-h-screen backdrop-blur-lg bg-white/10 flex flex-col;
 }
 
 .sideBarLinkContainer {
@@ -41,6 +41,12 @@
 
 /* DESTINATION */
 .destinationContainer {
-  @apply h-full w-full flex bg-gradient-to-l from-neutral-500 to-slate-700 
+  @apply min-h-fit w-full flex bg-gradient-to-l from-neutral-500 to-slate-700 
   flex-col justify-center text-center items-center;
+}
+.destinationLink {
+  @apply font-barlow text-xl border-b-4 border-b-transparent duration-500 ease-in-out hover:border-white;
+}
+.active {
+  @apply border-white;
 }
