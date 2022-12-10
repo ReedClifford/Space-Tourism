@@ -4,12 +4,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Bellefair&family=Poppins:ital,wght@0,400;0,600;0,700;1,100&display=swap");
 
 .root-container {
-  @apply min-h-screen flex bg-black justify-center text-9xl font-bellefair items-center;
+  @apply min-h-screen flex bg-black justify-center  text-white items-center;
 }
 
 /* NAVBAR */
 .navbar {
-  @apply flex justify-between z-40 items-center fixed top-0 w-full px-8 py-4;
+  @apply flex justify-between z-50 backdrop-blur-sm bg-black/10 items-center fixed top-0 w-full px-8 py-4;
 }
 
 /* HOME */
@@ -24,7 +24,7 @@
   @apply flex flex-col items-center justify-center gap-5 mt-7 z-20;
 }
 .exploreButton {
-  @apply w-40 h-40 mt-16 rounded-full bg-white text-xl  text-black;
+  @apply w-40 h-40 mt-16 rounded-full font-bellefair text-center bg-white text-xl  text-black;
 }
 
 /* BURGERMENU */
@@ -37,4 +37,10 @@
 }
 .sideBarLinks {
   @apply text-xl flex gap-4  text-neutral-100 font-light font-barlow;
+}
+
+/* DESTINATION */
+.destinationContainer {
+  @apply h-full w-full flex bg-gradient-to-l from-neutral-500 to-slate-700 
+  flex-col justify-center text-center items-center;
 }

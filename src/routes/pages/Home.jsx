@@ -5,7 +5,7 @@ const Home = () => {
     <section className="home-container">
       <img src={mobileBg} alt="mobile" className="mobile-bg" />
       <div className="header-container">
-        <h3 className="font-barlow text-base text-slate-300">
+        <h3 className="font-barlow text-base text-slate-300 mt-16">
           SO, YOU WANT TO TRAVEL TO
         </h3>
         <h1 className="font-bellefair text-8xl text-slate-200">SPACE</h1>

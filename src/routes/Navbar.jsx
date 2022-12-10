@@ -9,7 +9,7 @@ const Navbar = () => {
   const { active, setActive } = useToggle();
   return (
     <Fragment>
-      <nav className="flex justify-between z-40 items-center fixed top-0 w-full px-8 py-4">
+      <nav className="navbar">
         <div>
           <Link to="/">
             <img src={logo} alt="logo" className="w-12 cursor-pointer" />
