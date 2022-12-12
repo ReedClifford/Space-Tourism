@@ -13,6 +13,11 @@ import Mars from "./components/destination/Mars.jsx";
 import Moon from "./components/destination/Moon.jsx";
 import Titan from "./components/destination/Titan.jsx";
 import Destination from "./routes/pages/DestinationPage";
+
+import Tech1 from "./components/technology/Tech1";
+import Tech2 from "./components/technology/Tech2";
+import Tech3 from "./components/technology/Tech3";
+import TechnologyPage from "./routes/pages/TechnologyPage";
 const App = () => {
   return (
     <section className="root-container">
@@ -31,7 +36,11 @@ const App = () => {
             <Route path="crew3" element={<Crew3 />} />
             <Route path="crew4" element={<Crew4 />} />
           </Route>
-          <Route path="technology" element={"technology"} />
+          <Route path="technology" element={<TechnologyPage />}>
+            <Route index element={<Tech1 />} />
+            <Route path="2" element={<Tech2 />} />
+            <Route path="3" element={<Tech3 />} />
+          </Route>
         </Route>
       </Routes>
     </section>

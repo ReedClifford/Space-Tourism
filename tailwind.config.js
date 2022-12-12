@@ -6,7 +6,11 @@ module.exports = {
       barlow: ["Barlow", "sans-serif"],
       bellefair: ["Bellefair", "serif"],
     },
-    extend: {},
+    extend: {
+      width: {
+        128: "32rem",
+      },
+    },
   },
   plugins: [],
 };
