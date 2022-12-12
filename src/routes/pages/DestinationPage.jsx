@@ -15,9 +15,8 @@ const Destination = () => {
         alt="mobileBg"
         className="absolute inset-0 h-fit w-full select-none  mix-blend-overlay object-cover  object-center z-0 block md:hidden"
       />
-      <h2 className="flex gap-5 mt-28 font-barlow z-30">
-        <span className="text-neutral-400 font-extrabold ">01</span>PICK YOUR
-        DESTINATION
+      <h2 className="pageHeader">
+        <span className="pageHeaderSpan ">01</span>PICK YOUR DESTINATION
       </h2>
       <img src={currentDestination} alt="moon" className="w-48 z-40 my-5" />
       <div className="flex gap-5 z-40">
