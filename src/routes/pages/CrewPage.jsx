@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import desktopBg from "../../assets/crew/background-crew-desktop.jpg";
@@ -43,7 +44,10 @@ const CrewPage = () => {
       lg:items-start lg:container lg:mx-auto"
       >
         <div className="border-b border-slate-700 z-10  mt-10 lg:absolute lg:right-5 lg:bottom-0">
-          <img
+          <motion.img
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.45, duration: 0.75, ease: "easeOut" }}
             src={currentCrew}
             alt="crew1"
             className={`w-40 md:w-96 ${size}`}

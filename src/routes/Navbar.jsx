@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Fragment } from "react";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import burgerMenu from "../assets/shared/icon-hamburger.svg";
@@ -10,11 +11,16 @@ const Navbar = () => {
   return (
     <Fragment>
       <nav className="navbar">
-        <div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 1 }}
+          transition={{ duration: 0.75, ease: "easeOut" }}
+        >
           <Link to="/">
             <img src={logo} alt="logo" className="w-12 cursor-pointer" />
           </Link>
-        </div>
+        </motion.div>
         <div className="block md:hidden">
           <img
             src={burgerMenu}
@@ -24,7 +30,13 @@ const Navbar = () => {
           />
         </div>
 
-        <div className="hidden  md:block ">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 1 }}
+          transition={{ duration: 0.75, ease: "easeOut" }}
+          className="hidden  md:block "
+        >
           <div className="tabletNavlinkContainer">
             <NavLink to="/" className="tabletNavlink">
               HOME
@@ -39,7 +51,7 @@ const Navbar = () => {
               TECHNOLOGY
             </NavLink>
           </div>
-        </div>
+        </motion.div>
       </nav>
       {active ? <BurgerMenu /> : null}
       <Outlet />

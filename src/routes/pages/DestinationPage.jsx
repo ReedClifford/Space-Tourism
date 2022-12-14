@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import desktopBg from "../../assets/destination/background-destination-desktop.jpg";
@@ -37,7 +38,11 @@ const Destination = () => {
               <span className="pageHeaderSpan ">01</span>PICK YOUR DESTINATION
             </h2>
           </div>
-          <img
+
+          <motion.img
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.45, duration: 0.75, ease: "easeOut" }}
             src={currentDestination}
             alt="moon"
             className="w-48 z-40 my-5 md:w-72 md:my-20 lg:w-80"
