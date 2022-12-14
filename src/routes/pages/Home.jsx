@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import desktopBg from "../../assets/home/background-home-desktop.jpg";
 import mobileBg from "../../assets/home/background-home-mobile.jpg";
 import tabletBg from "../../assets/home/background-home-tablet.jpg";
@@ -44,7 +45,9 @@ const Home = () => {
           </motion.p>
         </div>
       </div>
-      <button className="exploreButton">EXPLORE</button>
+      <Link to="/destination">
+        <button className="exploreButton">EXPLORE</button>
+      </Link>
     </section>
   );
 };
